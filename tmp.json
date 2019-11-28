@@ -1,0 +1,28 @@
+[
+    {
+        "guild": "641369104028008459",
+        "id": "649211342003372032",
+        "name": "Admin",
+        "color": 15844367,
+        "hoist": false,
+        "rawPosition": 3,
+        "permissions": 104324681,
+        "managed": false,
+        "mentionable": false,
+        "deleted": false,
+        "createdTimestamp": 1574854445697
+    },
+    {
+        "guild": "641369104028008459",
+        "id": "641369104028008459",
+        "name": "@everyone",
+        "color": 0,
+        "hoist": false,
+        "rawPosition": 0,
+        "permissions": 104324673,
+        "managed": false,
+        "mentionable": false,
+        "deleted": false,
+        "createdTimestamp": 1572984710462
+    }
+]

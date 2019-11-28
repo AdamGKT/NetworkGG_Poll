@@ -1,0 +1,29 @@
+{
+  "name": "networkgg_poll",
+  "version": "1.0.0",
+  "description": "Poll bot for discord.",
+  "main": "src/index.js",
+  "dependencies": {
+    "discord.js": "github:discordjs/discord.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamGKT/NetworkGG_Poll.git"
+  },
+  "keywords": [
+    "discord",
+    "poll",
+    "bot"
+  ],
+  "author": "Adam Goncalves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdamGKT/NetworkGG_Poll/issues"
+  },
+  "homepage": "https://github.com/AdamGKT/NetworkGG_Poll#readme"
+}
