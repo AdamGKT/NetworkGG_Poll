@@ -8,10 +8,10 @@ class User {
     }
 
     getInfo() {
-        const currentRolesEmojies = localRoles.filter((role) => {
+        const currentRolesEmoji = localRoles.filter((role) => {
             return this.roles.some((userRole) => userRole.name == role.name);
         }).map((role) => role.emoji).join('');
-        return `${currentRolesEmojies} **- ${this.username}** demande :`;
+        return `${currentRolesEmoji} **- ${this.username}** demande :`;
     }
 }
 

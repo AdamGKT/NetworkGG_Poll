@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 var auth = require('../auth.json');
 const Parser = require('./parser.js');
+const Poll = require('./poll.js');
+
 
 const client = new Discord.Client();
 
@@ -9,12 +11,16 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  const parser = new Parser(msg);
-  const user = parser.parseUser();
 
   if (msg.author.bot == false) {
+    const parser = new Parser(msg);
+    const user = parser.parseUser();
     msg.delete();
-    msg.channel.send(user.getInfo());
+    if (msg.content.startsWith("/poll") && parser.isArgValid()) {
+      const poll = new Poll(parser.parseQuestion(), parser.parseAnswers());
+      msg.channel.send(user.getInfo());
+      msg.channel.send(poll.getQuestion());
+    }
   }
 });
 
