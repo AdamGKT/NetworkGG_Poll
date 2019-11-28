@@ -26,3 +26,27 @@
         "createdTimestamp": 1572984710462
     }
 ]
+
+{
+    "channelID": "649679330280079442",
+    "deleted": false,
+    "id": "649701770922033193",
+    "type": "DEFAULT",
+    "content": ":bar_chart: cul",
+    "authorID": "649630634532405258",
+    "pinned": false,
+    "tts": false,
+    "nonce": null,
+    "system": false,
+    "embeds": [],
+    "attachments": [],
+    "createdTimestamp": 1574971373063,
+    "editedTimestamp": null,
+    "webhookID": null,
+    "applicationID": null,
+    "activity": null,
+    "flags": 0,
+    "reference": null,
+    "guildID": "641369104028008459",
+    "cleanContent": ":bar_chart: cul"
+}

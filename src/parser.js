@@ -3,8 +3,9 @@ const User = require('./user.js')
 class Parser {
     constructor(msg) {
         this.msg = msg;
-        this.parsedContent = this.msg.content.match(/"(.*?)"/g)
-            .map((e) => e.replace(/\"/g, ""));
+        this.parsedContent = this.msg.content.match(/"(.*?)"/g);
+        if (this.parsedContent.length >= 1)
+            this.parsedContent = this.parsedContent.map((e) => e.replace(/\"/g, ""));
     }
 
     parseUser() {
@@ -24,11 +25,15 @@ class Parser {
     }
 
     parseAnswers() {
-        return (this.parsedContent.shift());
+        return (this.parsedContent.slice(1));
     }
 
     isArgValid() {
         return (this.parsedContent.length != 2);
+    }
+
+    isMultipleAnswer() {
+        return (this.parsedContent.length > 2);
     }
 }
 

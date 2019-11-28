@@ -1,16 +1,16 @@
 const pollEmoji = [
-    {name: 'a', emoji: ":regional_indicator_a:"},
-    {name: 'b', emoji: ":regional_indicator_b:"},
-    {name: 'c', emoji: ":regional_indicator_c:"},
-    {name: 'd', emoji: ":regional_indicator_d:"},
-    {name: 'e', emoji: ":regional_indicator_e:"},
-    {name: 'f', emoji: ":regional_indicator_f:"},
-    {name: 'g', emoji: ":regional_indicator_g:"},
-    {name: 'h', emoji: ":regional_indicator_h:"},
-    {name: 'i', emoji: ":regional_indicator_i:"},
-    {name: 'j', emoji: ":regional_indicator_j:"},
-    {name: 'yes', emoji: ":thumbsup:"},
-    {name: 'no', emoji: ":thumbsdown:"},
+    {name: 'a', emoji: '1️⃣'},
+    {name: 'b', emoji: '2️⃣'},
+    {name: 'c', emoji: '3️⃣'},
+    {name: 'd', emoji: '4️⃣'},
+    {name: 'e', emoji: '5️⃣'},
+    {name: 'f', emoji: '6️⃣'},
+    {name: 'g', emoji: '7️⃣'},
+    {name: 'h', emoji: '8️⃣'},
+    {name: 'i', emoji: '9️⃣'},
+    {name: 'j', emoji: '🔟'},
+    {name: 'yes', emoji: '👍'},
+    {name: 'no', emoji: '👎'},
 ];
 
 module.exports = pollEmoji;

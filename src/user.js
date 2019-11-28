@@ -11,7 +11,7 @@ class User {
         const currentRolesEmoji = localRoles.filter((role) => {
             return this.roles.some((userRole) => userRole.name == role.name);
         }).map((role) => role.emoji).join('');
-        return `${currentRolesEmoji} **- ${this.username}** demande :`;
+        return `${currentRolesEmoji} - *${this.username}* demande :`;
     }
 }
 
