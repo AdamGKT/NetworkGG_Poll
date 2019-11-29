@@ -12,7 +12,7 @@ client.on('ready', () => {
 
 client.on('message', async msg => {
 
-  if (msg.author.bot == false) {
+  if (msg.author.bot == false && msg.deletable) {
     msg.delete();
     try {
       if (msg.content.startsWith("/poll")) {
@@ -20,7 +20,7 @@ client.on('message', async msg => {
         if (parser.isArgValid()) {
           const user = parser.parseUser();
           const poll = new Poll(parser.parseQuestion(), parser.parseAnswers());
-          msg.channel.send(user.getInfo());
+          msg.reply(user.getInfo());
           const msgQuestion = await msg.channel.send(poll.getQuestion());
           if (parser.isMultipleAnswer()){
             const msgAnswer = await msg.channel.send(poll.getAnswers());

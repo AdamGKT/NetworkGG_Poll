@@ -4,8 +4,10 @@ class Parser {
     constructor(msg) {
         this.msg = msg;
         this.parsedContent = this.msg.content.match(/"(.*?)"/g);
-        if (this.parsedContent.length >= 1)
+        if (this.parsedContent.length >= 1 && this.parsedContent.length <= 11)
             this.parsedContent = this.parsedContent.map((e) => e.replace(/\"/g, ""));
+        else
+            throw err;
     }
 
     parseUser() {
