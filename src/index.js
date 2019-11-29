@@ -33,7 +33,7 @@ client.on('message', async msg => {
     } catch (err) {
       const msgError = await msg.channel.send({embed:{
         color: '#f8b132',
-        description: "Pour créer un sondage dont la réponse est oui ou non tapez : **/poll \"Votre question\"**\nPour créer un sondage à réponse multiple (2 à 10 options) tapez : **\"Votre question\" \"Option 1\" \"Option 2\" ...**"
+        description: "Pour créer un sondage dont la réponse est oui ou non tapez : **/poll \"Votre question\"**\nPour créer un sondage à réponses multiples (2 à 10 options) tapez : **\"Votre question\" \"Option 1\" \"Option 2\" ...**"
       }});
       setTimeout(() => {
         msgError.delete();

@@ -1,16 +1,18 @@
 const localRoles = [
     {name:"VIP", emoji: ":crown:"},
-    {name:"Représentant de structure", emoji: ":necktie:"},
-    {name:"Créateur de contenu", emoji: ":clapper:"},
-    {name:"Coach", emoji: ":brain:"},
-    {name:"Community manager", emoji: ":pencil:"},
-    {name:"Développeur", emoji: ":computer:"},
-    {name:"Graphiste", emoji: ":art:"},
-    {name:"Manager", emoji: ":briefcase:"},
-    {name:"Monteur vidéo", emoji: ":movie_camera:"},
-    {name:"Responsable évènementiel", emoji: ":tada:"},
-    {name:"Responsable marketing", emoji: ":chart_with_upwards_trend:"},
-    {name:"Responsable communication", emoji: ":globe_with_meridians:"},
+    {name:"REPRESENTANT STRUCTURE", emoji: ":necktie:"},
+    {name:"CREATEUR DE CONTENU", emoji: ":clapper:"},
+    {name:"COACH", emoji: ":brain:"},
+    {name:"COMMUNITY MANAGER", emoji: ":pencil:"},
+    {name:"DEVELOPPEUR", emoji: ":computer:"},
+    {name:"GRAPHISTE", emoji: ":art:"},
+    {name:"MANAGER", emoji: ":briefcase:"},
+    {name:"MONTEUR VIDEO", emoji: ":movie_camera:"},
+    {name:"RESP.EVENEMENTIEL", emoji: ":tada:"},
+    {name:"RESP.MARKETING", emoji: ":chart_with_upwards_trend:"},
+    {name:"RESP.COMMUNICATION", emoji: ":globe_with_meridians:"},
+    {name:"MODERATEUR", emoji: ":detective:"},
+    {name:"FONDATEUR", emoji: ":rocket:"}
 ]
 
 module.exports = localRoles;
